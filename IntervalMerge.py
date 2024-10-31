@@ -5,7 +5,7 @@ class Solution:
         ans=[]
         n=len(ls)
 
-        ls.sort(key=lambda x:x[0])
+        ls.sort(key=lambda x:x[0])  
         for i in range(n):
             start,end= ls[i][0],ls[i][1]
             if ans and end <= ans[-1][1]:
