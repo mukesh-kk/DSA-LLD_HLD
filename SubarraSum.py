@@ -10,7 +10,7 @@ def getLongestKSumSubarrayLength(arr : List[int],k:int) -> int:
         if sum-k==0:
             longest=i+1
         else:
-            if sum in  mp:
+            if sum-k in  mp:
                 longest =max(longest,i-mp[sum-k])
             else:
                 mp[sum]=i
