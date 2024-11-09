@@ -1,3 +1,4 @@
+#pylint: disable=all
 from typing import List
 class Solution:
     def count_inversions(self,nums,low,mid,high):
