@@ -1,4 +1,6 @@
-def triplet(n: int, A: [int]) -> [[int]]:
+#pylint: disable-all
+from typing import int,List
+def triplet(n: int, A: List[int]) -> List[List[int]]:
 
     ans=[]
     A.sort()
@@ -23,3 +25,5 @@ def triplet(n: int, A: [int]) -> [[int]]:
                     k-=1 #makes Ak unique
 
     return ans
+for i in range(10,-1,-1):
+    print(i)
