@@ -4,29 +4,38 @@ function debounce(func, delay) {
     return function (...args) {
         clearTimeout(timer);
         timer = setTimeout(() => {
-            func.apply(this, args);
+            func( ...args);
         }, delay);
     };
 }
-
-function namse(params) {
-    
-}
+const print =console.log
 function throttle(func,limit) {
-    let inThrottle=false
+    let timer =null
+    let lastTimeCalled=0
+    return function (...arg){
+        const currentTime=Date.now()
+        const timePassed=currentTime-lastTimeCalled
+        const timeRemaining= limit-timePassed
+        if (timeRemaining>0){
+            if (timer)clearTimeout(timer)
+            timer=setTimeout(()=>{
+                func(...arg)
+                lastTimeCalled=Date.now()
+                print(lastTimeCalled)
+            },timeRemaining)
 
-    return function (...args) {
-        if(!inThrottle){
-            inThrottle=true
-            func.apply(this,args)
-            setTimeout(()=>inThrottle=true,limit)
+        }else{
+            func(...arg)
+            lastTimeCalled=Date.now()
+            print(lastTimeCalled)
         }
     }
-    
 }
 const t= throttle(console.log,1000)
+setInterval(()=>t('okay'),1)
 
 
-setInterval(()=>{
-    t('hello');
-},1)
+
+
+// Visualization
+//  Links : https://web.archive.org/web/20180324022838/http://demo.nimius.net/debounce_throttle/
