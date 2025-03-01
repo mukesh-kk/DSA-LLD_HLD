@@ -39,7 +39,7 @@ class Circle {
 
 /////////////////////////////////////////////////////////////////////
 
-// Getting Property  Decription and changing them
+//--------------- Getting Property  Decription and changing them-------------
 // Object.getOwnPropertyDescriptors(prototype) & Object.getOwnPropertyDescriptor(prototype,propertyname)
 /**
  * 🔹 Summary Table
