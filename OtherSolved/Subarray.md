@@ -11,3 +11,7 @@
 - [Minimum Subarray Sum](https://www.geeksforgeeks.org/problems/smallest-sum-contiguous-subarray/1)
 
 - [Maximum Subarray Sum](https://leetcode.com/problems/maximum-subarray/description/)
+
+- [Maximum Of K window](https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1)
+
+- [Bounded Sum Subarray](https://www.geeksforgeeks.org/problems/longest-bounded-difference-subarray/1)
