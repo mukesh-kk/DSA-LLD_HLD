@@ -6,4 +6,6 @@
 - [Lexicographically Smallest String that can be genrated from two strings]
 - [Buy Sell Stock 1, at most 2 , k times ](https://www.geeksforgeeks.org/problems/buy-and-sell-a-share-at-most-twice/1)
 
+- [Stickler Theif](https://www.geeksforgeeks.org/problems/stickler-theif-1587115621/1)
+
 
