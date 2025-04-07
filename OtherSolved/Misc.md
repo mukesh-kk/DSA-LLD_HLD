@@ -48,8 +48,20 @@
 
 - [Job sequence](https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1)
 
--[Partition String](https://www.geeksforgeeks.org/problems/maximize-partitions-in-a-string/1)
+- [Partition String](https://www.geeksforgeeks.org/problems/maximize-partitions-in-a-string/1)
 
--[ Partition Label](https://leetcode.com/problems/partition-labels/description/)
+- [ Partition Label](https://leetcode.com/problems/partition-labels/description/)
 
 - [Put Marbels in Bag](https://leetcode.com/problems/put-marbles-in-bags)
+
+- [Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/)
+
+- [Rotten Oranges](https://www.geeksforgeeks.org/problems/rotten-oranges2536/1)
+
+- [LCA-DeepestLeaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves)
+
+-[XORof subset](https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/)
+
+-[NUmber of Islands](https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1)
+
+- [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/description)
