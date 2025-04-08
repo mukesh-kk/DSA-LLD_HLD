@@ -1,6 +1,6 @@
 # Clients should not be forced to depend on interfaces they do not use.
 # Don’t make a class implement things it doesn't need. Break big
-#  interfaces into smaller, more specific ones
+# interfaces into smaller, more specific ones
 
 from abc import ABC, abstractmethod
 

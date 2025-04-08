@@ -71,3 +71,19 @@ function deleteTask(li) {
     }
   }
 }
+
+class Singleton{
+  constructor(){
+      if(Singleton.instance){
+          return Singleton.instance
+      }
+      Singleton.instance=this
+  }
+  run(){
+      console.log('run')
+  }
+  
+}
+
+x=new Singleton()
+console.log(x==Singleton.instance)

@@ -31,7 +31,7 @@ class Rectangle:
 
 
 # Example 2--------------------------------------------
-  
+from abc import ABC, abstractmethod
 class NotificationSender:
     def send(self, message, type):
         if type == 'email':
@@ -41,8 +41,9 @@ class NotificationSender:
         elif type == 'whatsapp':
             print(f"Sending WhatsApp: {message}")
 
+
 #solution ----------->
-from abc import ABC, abstractmethod
+
 
 class Animal(ABC):  # Abstract base class
     @abstractmethod
