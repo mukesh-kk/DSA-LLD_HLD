@@ -65,3 +65,7 @@
 -[NUmber of Islands](https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1)
 
 - [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/description)
+
+- [Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/description)
+
+- [Flood Fill](https://www.geeksforgeeks.org/problems/flood-fill-algorithm1856/1)

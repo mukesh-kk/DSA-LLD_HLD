@@ -1,6 +1,6 @@
 #Objects of a superclass should be replaceable with objects of its subclasses 
 # without breaking the app.
-# INheritnace in such a way that super class is replaceable by sub class
+# Inheritnace in such a way that super class is replaceable by sub class
 
 class Rectangle:
     def set_height(self,h):
