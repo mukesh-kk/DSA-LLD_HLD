@@ -69,3 +69,7 @@
 - [Count the Number of Powerful Integers](https://leetcode.com/problems/count-the-number-of-powerful-integers/description)
 
 - [Flood Fill](https://www.geeksforgeeks.org/problems/flood-fill-algorithm1856/1)
+
+-[Rabbit In the Forest](https://leetcode.com/problems/rabbits-in-forest)
+
+-[Hidden Sequence](https://leetcode.com/problems/count-the-hidden-sequences)

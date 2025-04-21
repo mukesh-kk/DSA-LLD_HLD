@@ -1,24 +1,22 @@
-from typing import List
-class Solution:
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
-        """
-        Do not return anything, modify nums1 in-place instead.
-        """
-        k,i,j =m+n-1,m-1,n-1
-        if m==0:
-            print('entered')
-            nums1=[*nums2]
-            return
-        if n==0:
-            return 
-        while k>0:
-            if nums1[i]<nums2[j]:
-                nums1[k]=nums2[j]
-                k-=1
-                j-=1
-            else:
-                nums1[k]=nums1[i]
-                i-=1
-                k-=1
-sl=Solution()
-sl.merge([0],0,[1],1)
+def find_missing_numbers(arr):
+    i = 0
+    while i < len(arr):
+        correct_index = arr[i] - 1
+        # Check bounds and avoid infinite loop with duplicates
+        if arr[i] <= len(arr) and arr[i] != arr[correct_index]:
+            arr[i], arr[correct_index] = arr[correct_index], arr[i]
+        else:
+            i += 1
+    print(arr)
+    # After cyclic sort, arr[i] should be i + 1
+    # After cyclic sort, collect missing numbers
+    missing = []
+    for i in range(len(arr)):
+        if arr[i] != i + 1:
+            missing.append(i + 1)
+
+    return missing
+
+arr = [4, 3, 2, 7, 8, 2, 3, 1]
+print(find_missing_numbers(arr))
+# Output: [5, 6]

@@ -1,9 +1,16 @@
-Table: Customers
-CustomerID	Name
-1	Alice
-2	Bob
-3	Charlie
-Table: Orders
-OrderID	CustomerID	Item
-101	1	Laptop
-102	2	Smartphone
+# SQL Joins
+
+SQL joins are used to combine records from two or more tables based on a related column between them. Here are the main types of SQL joins:
+
+## 1. **INNER JOIN**
+
+Returns records that have matching values in both tables.
+
+### Syntax:
+```sql
+SELECT column1, column2
+FROM table_a
+INNER JOIN table_b
+ON table_a.common_column = table_b.common_column;
+
+
