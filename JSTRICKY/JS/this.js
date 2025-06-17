@@ -145,3 +145,45 @@ const obj6 = {
 };
 
 console.log(obj6.multiply());
+
+//  9
+const p2 = {
+  name: "Mukesh",
+  getArrow() {
+    return () => {
+      console.log(this.name);
+    };
+  }
+};
+
+const fn = p2.getArrow();
+fn();
+
+// 10 
+let x = 1;
+
+if (function f() {}) {
+  x += typeof f;
+}
+
+console.log(x);
+
+//12 sorting :everything undefined, null, empty to end
+const data = [
+  { name: 'Alice', age: 45 },
+  { name: 'Bob', age: 25 },
+  { name: 'Charlie', age: 30 },
+];
+
+const result = data.sort((a, b) => a.age - b.age);
+
+console.log(result);
+// --
+console.log([3, undefined, 1, , 2, null].sort());
+console.log([true, false, true, false].sort());
+
+// ---
+const nums = [5, 1, 3];
+const sorted = nums.sort();
+console.log(nums === sorted);
+
