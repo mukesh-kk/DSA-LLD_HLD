@@ -35,7 +35,9 @@ const obj = {
 };
 
 
-
+obj.say()
+obj.say1()
+obj.say2()
 
 // 3-----------------
 
@@ -168,7 +170,8 @@ if (function f() {}) {
 
 console.log(x);
 
-//12 sorting :everything undefined, null, empty to end
+//12 sorting 
+// :everything undefined, null, empty is pushed to end
 const data = [
   { name: 'Alice', age: 45 },
   { name: 'Bob', age: 25 },
@@ -183,7 +186,5 @@ console.log([3, undefined, 1, , 2, null].sort());
 console.log([true, false, true, false].sort());
 
 // ---
-const nums = [5, 1, 3];
-const sorted = nums.sort();
-console.log(nums === sorted);
+ 
 

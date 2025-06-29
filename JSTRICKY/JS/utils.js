@@ -31,13 +31,18 @@ function removeVowels(str) {
 // ---------------------
 const str = "This is a test string with vowels";
 console.log(removeVowels(str)); // Output: Ths s  tst strng wth vwls
-str=`Mukesh 15  Bengalore
+ str=`Mukesh 15  Bengalore
 Vipin 20  Bhatni
 Anajli 25  Kolkata
 Suraj 25 Ooty
 `;
 
 // makeit like ={name:{age,city}}
+// { 
+// Vipin: {age:20,city:Bhatni},
+
+//
+//}
 
 
 // -----flat object------------------

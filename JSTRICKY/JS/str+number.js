@@ -23,6 +23,10 @@ console.log('b' + 'a' + + 'a' + 'a'); //banana
 console.log(!![] + !![]);  //2
 console.log(typeof NaN);  // 'number'
 console.log([1,2] + [3,4]);  // '1,23,4'
+let b = 1;
+console.log(b + b + ++b);
+
+
 
 
 
