@@ -74,6 +74,32 @@ function flattenObject(obj, parentKey = '', result = {}) {
 
   return result;
 }
+const user = {
+      id: 1,
+      name: 'John Doe',
+      email: 'john@example.com',
+      address: {
+        street: '123 Main St',
+        city: 'New York',
+        state: 'NY',
+        country: {
+          name: 'USA',
+          code: 'US'
+        }
+      },
+      isActive: true
+    };
+const expected = {
+      'id': 1,
+      'name': 'John Doe',
+      'email': 'john@example.com',
+      'address.street': '123 Main St',
+      'address.city': 'New York',
+      'address.state': 'NY',
+      'address.country.name': 'USA',
+      'address.country.code': 'US',
+      'isActive':true
+};
 
 //  clean object
 function cleanObject(obj) {
