@@ -26,4 +26,21 @@ if (cluster.isMaster)
 
 // External load balancer sits in front and distributes traffic across machines
 
-// Useful when traffic outgrows a single machine          
+// Useful when traffic outgrows a single machine    
+// 🧠 What are Worker Threads in Node.js?
+
+// Worker Threads = real multithreading in Node.js
+
+// They allow you to:
+
+// Run JavaScript in parallel
+
+// Inside the same process
+
+// On multiple CPU cores
+
+// Introduced in Node.js v10.5+ (stable later).
+
+// 🔑 Core idea (one line)
+
+// Worker Threads are used to offload CPU-heavy work without blocking the main event loop.      
